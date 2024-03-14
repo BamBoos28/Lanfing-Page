@@ -1,0 +1,207 @@
+<!-- red : EF5A5A
+lyell : FEFFDF
+yell : FFE79A
+orrang : FFA952 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              title: ["Exo2", "sans-serif"],
+              body: ["Montserrat", "sans-serif"],
+            },
+            dropShadow: {
+              "3xl": [
+                "5px 5px rgba(0, 0, 0, 0.5)",
+                "0 20px 35px rgba(0, 0, 0, 0.5)",
+              ],
+              "4xl": [
+                "3px 3px rgba(0, 0, 0, 0.5)",
+                "0 0 35px rgba(0, 0, 0, .3)",
+              ],
+            },
+            fontSize: {
+              "8xl": "5rem",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#f3f4f5]">
+    <nav
+      id="navbar"
+      class="fixed px-44 py-6 flex w-full items-center justify-between z-20 duration-75"
+    >
+      <img class="drop-shadow-4xl" src="./assets/teknisi.png" alt="" />
+      <div
+        class="flex gap-10 text-xl font-bold font-title text-white tracking-widest"
+      >
+        <h1 class="navItem relative"><a href="#home">HOME</a></h1>
+        <h1 class="navItem relative"><a href="#about">ABOUT</a></h1>
+        <h1 class="navItem relative"><a href=""></a>CONTATC</h1>
+      </div>
+    </nav>
+
+    <header
+      id="home"
+      class="w-full h-screen relative flex items-center px-44 bg-[#929EC4] text-white"
+    >
+      <img class="absolute bottom-0 left-0" src="./assets/wave.svg" alt="" />
+      <img
+        id="homeTV"
+        class="absolute h-full py-24 left-1/3"
+        src="./assets/tv.png"
+        alt=""
+      />
+      <div class="w-3/5 font-body">
+        <h1
+          id="homeH1"
+          class="font-title font-bold text-8xl mb-3 leading-tight tracking-normal drop-shadow-3xl"
+        >
+          Temukan solusi dari semua masalah TVmu
+        </h1>
+        <h5 id="homeH5" class="text-lg drop-shadow-4xl mb-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          dolor nostrum temporibus, nesciunt consequatur provident sequi, ut
+          dolorum odit recusandae numquam, quas vitae? Sunt, neque veritatis
+          corrupti sequi adipisci omnis?
+        </h5>
+        <button
+          id="homeButton"
+          class="px-9 py-3 hover:bg-white hover:text-[#929EC4] duration-300 border-2 rounded-md font-bold duration-100 tracking-widest bg-transparent backdrop-blur-xl"
+        >
+          VISTI ME
+        </button>
+      </div>
+    </header>
+
+    <section id="about" class="px-44 pt-56 h-screen flex gap-6 relative">
+      <img src="./assets/wave-2.svg" alt="" class="absolute left-0 bottom-0" />
+      <div id="aboutText" class="w-1/2 text-[#929EC4] font-body z-10">
+        <h1
+          class="font-title font-bold text-8xl mb-12 tracking-wider drop-shadow-4xl"
+        >
+          Tentang Kami
+        </h1>
+        <p class="text-lg w-4/5 mb-3 tracking-wider leading-relaxed mb-6">
+          Teknisitv.id merupakan website yang berbagi seputar dunia teknisi tv
+          LED, LCD ataupun Tabung untuk semua merk TV yang ada di pasaran. Merk
+          TV tersebut antara lain LG, Samsung, Sony, Changhong dan masih banyak
+          lagi lainnya.
+        </p>
+        <h5 class="text-lg w-4/5 mb-3 tracking-wider leading-relaxed">
+          Jika ada pertanyaan ataupun saran terhadap isi di website ini.
+          Silahkan hubungi admin website teknisi.id melalui menu contact.
+        </h5>
+      </div>
+      <div
+        id="aboutItem"
+        class="w-1/2 grid grid-rows-2 grid-flow-col gap-2 z-10 h-max"
+      >
+        <div
+          class="hover:bg-[#929EC4] flex flex-col justify-center items-center px-9 rounded border-4 duration-300 text-center h-56"
+        >
+          <i class="fi fi-rr-calendar-lines text-6xl"></i>
+          <h1 class="text-xl tracking-wider">UP TO DATE</h1>
+          <h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+            natus id,
+          </h3>
+        </div>
+        <div
+          class="hover:bg-[#929EC4] h-56 flex flex-col justify-center items-center px-9 rounded border-4 duration-300 text-center"
+        >
+          <i class="fi fi-rr-calendar-lines text-6xl"></i>
+          <h1 class="text-xl tracking-wider">TERPERCAYA</h1>
+          <h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+            natus id,
+          </h3>
+        </div>
+        <div
+          class="hover:bg-[#929EC4] h-56 flex flex-col justify-center items-center px-9 rounded border-4 duration-300 text-center"
+        >
+          <i class="fi fi-rr-file-invoice text-6xl"></i>
+          <h1 class="text-xl tracking-wider">ORISINIL</h1>
+          <h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+            natus id,
+          </h3>
+        </div>
+        <div
+          class="hover:bg-[#929EC4] h-56 flex flex-col justify-center items-center px-9 rounded border-4 duration-300 text-center"
+        >
+          <i class="fi fi-rr-grid text-6xl"></i>
+          <h1 class="text-xl tracking-wider">LENGKAP</h1>
+          <h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+            natus id,
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#929EC4] w-full relative">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
